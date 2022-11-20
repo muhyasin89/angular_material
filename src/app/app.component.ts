@@ -7,4 +7,15 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular_material';
+  notification=0;
+  showSpinner=false;
+  opened=false;
+
+  log(state: any){
+    console.log(state); 
+  }
+  loadData(){
+    this.showSpinner = true;
+    setTimeout(() => this.showSpinner = false, 5000);
+  }
 }
