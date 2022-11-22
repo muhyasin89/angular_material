@@ -18,4 +18,8 @@ export class AppComponent {
     this.showSpinner = true;
     setTimeout(() => this.showSpinner = false, 5000);
   }
+
+  logChange(index: any){
+    console.log(index);
+  }
 }
